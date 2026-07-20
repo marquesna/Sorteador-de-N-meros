@@ -10,7 +10,9 @@ Fácil de personalizar e integrar em qualquer página.
 HTML
 CSS
 JavaScript (Vanilla)
+
 ▶️ Como usar
+
 Abra o arquivo index.html no navegador (duplo clique).
 Ou rode um servidor local rápido:
 python -m http.server 8000
