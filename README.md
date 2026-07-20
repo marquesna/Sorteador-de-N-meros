@@ -1,4 +1,4 @@
-[🔗 Ver projeto online](https://seu-usuario.github.io/nome-do-repositorio/)
+[🔗 Ver projeto online]([https://marquesna.github.io/Sorteador-de-N-meros/])
 
 Sorteador de Números 🎲
 Um pequeno e simpático sorteador de números feito com HTML, CSS e JavaScript — perfeito para decisões rápidas, sorteios de sala de aula ou diversão entre amigos.
