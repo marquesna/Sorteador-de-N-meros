@@ -1,0 +1,135 @@
+.animation-box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    background-color: #c58de7;
+    transform: rotate(0deg);
+    z-index: 1;
+    animation: spinAndRound 2s ease forwards;
+    margin-top: -2px;
+}
+
+.result-number1 {
+    font-family: 'Roboto Mono';
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 150%;
+    color: #030203;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    z-index: 2;
+    opacity: 0;
+    animation: showAndColor 2s ease forwards;
+}
+
+@keyframes spinAndRound {
+    0% {
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+    50% {
+        opacity: 1;
+        transform: rotate(170deg);
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes showAndColor {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+        color: #030203;
+    }
+    100% {
+        opacity: 1;
+        color: #c58de7;
+    }
+}
+.spin-round {
+    animation: spinAndRound 2s ease forwards;
+}
+
+.results-title {
+    font: var(--label-medium);
+    color: var(--content-primary);
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+#results-container {
+    width: 100%;
+    max-width: 36rem;
+
+    text-align: center;
+}
+
+#results-screen {
+    margin-top: -350px;
+    align-items: center;
+}
+
+.number-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    z-index: -1;
+    margin-bottom: 80px;
+    gap: 30px;
+}
+
+.result-number {
+    position: relative;
+
+    width: 80px;
+    height: 80px;
+    margin-top: -8px;
+
+    z-index: 0;
+}
+
+#again-button {
+    margin-top: -65.5px;
+
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-go:hover {
+    border-style: solid;
+    border-width: 2px;
+    border-image: var(--gradient-border) 1;
+    border-radius: 8px;
+    background-color: var(--bg-secondary);
+}
+
+.btn-go img#vector {
+    display: inline-block;
+    transition: transform 220ms cubic-bezier(0.2, 0.9, 0.2, 1);
+}
+
+.btn-go:hover img#vector-stroke {
+    animation: arrow-nudge 520ms ease-in-out;
+}
+
+#vector {
+    width: 24px;
+    height: 24px;
+}
+
+#vector-stroke {
+    width: 21.5px;
+    height: 21.5px;
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SORTEADOR DE NÚMEROS</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sora:wght@100..800&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles/index.css" />
+    </head>
+    <body>
+        <header class="logo">
+            <div class="header-container">
+                <img src="./assets/icons/logo.svg" alt="" />
+                <h1>NUMBERS</h1>
+            </div>
+        </header>
+
+        <div class="desktop-container">
+            <header class="title">
+                <div class="title-1">
+                    <p class="title-2">ONLINE - GRATUITO</p>
+                    <h1>SORTEADOR DE NÚMEROS</h1>
+                </div>
+            </header>
+
+            <main class="container">
+                <div id="infos" class="infos">
+                    <h3>QUERO SORTEAR:</h3>
+                    <p>
+                        Defina o intervalo e a quantidade de números, clique em
+                        "Sortear" e veja os resultados na tela. É rápido e
+                        fácil!
+                    </p>
+                </div>
+
+                <form id="form" class="form">
+                    <div class="fields">
+                        <label for="numbers-count" class="field-item">
+                            <span class="field-title">NÚMEROS</span>
+                            <input
+                                type="number"
+                                name="numbers-count"
+                                id="numbers-count"
+                                value="2"
+                            />
+                        </label>
+                        <label for="numbers-min" class="field-item">
+                            <span class="field-title">DE</span>
+                            <input
+                                type="number"
+                                name="numbers-min"
+                                id="numbers-min"
+                                value="1"
+                            />
+                        </label>
+                        <label for="numbers-max" class="field-item">
+                            <span class="field-title">ATÉ</span>
+                            <input
+                                type="number"
+                                name="numbers-max"
+                                id="numbers-max"
+                                value="100"
+                            />
+                        </label>
+                    </div>
+
+                    <div class="toggle">
+                        <label class="switch-label">
+                        <label class="switch">
+                        <input type="checkbox" id="toggle-btn"/>
+                        <span class="slider"></span>
+                        </label>
+                        <span class="switch-text">Não repetir número</span>
+                        </label>
+                    </div>
+                    
+                        <button class="btn-go" id="btn-go"> 
+                            <p>SORTEAR</p>
+                            <img
+                                src="./assets/icons/arrow.svg"
+                                alt=""
+                                id="arrow"
+                            />
+                        </button>
+                    
+                </form>
+            </main>
+
+            <section
+                id="results-screen"
+                class="hidden"
+                aria-live="polite"
+            >
+                         
+                <div id="results-container" >
+                    <h2 class="results-title">RESULTADO DO SORTEIO</h2>
+                    <ul id="results-list" class="number-list">
+                        <!-- <li class="result-number">
+                            <div class="animation-box"></div>
+                            <span class="result-number1"></span>
+                        </li> -->
+                    </ul>
+                    <button
+                        id="again-button"
+                        class="btn-go hidden">
+                        <p>SORTEAR NOVAMENTE</p>
+                        <img src="./assets/icons/vector.svg" id="vector" />
+                    </button>
+                
+            </section>
+
+            <div id="questions-container">
+                <div class="questions">
+                    <div class="question-title-group">
+                        <img src="./assets/icons/questions.svg" alt="" />
+                        <h3 class="question-text">
+                            Como funciona o sorteador de números?
+                        </h3>
+                    </div>
+                    <p class="answer-text">
+                        O sorteador utiliza um algoritmo de geração aleatória
+                        para criar números dentro do intervalo especificado pelo
+                        usuário.
+                    </p>
+                </div>
+                <div class="questions-1">
+                    <div class="question-title-group">
+                        <img src="./assets/icons/questions.svg" alt="" />
+                        <h3 class="question-text">
+                            Posso escolher o intervalo dos números?
+                        </h3>
+                    </div>
+                    <p class="answer-text">
+                        Sim, você pode definir os valores mínimo e máximo para o
+                        intervalo dos números sorteados.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <script src="scripts.js"></script>
+    </body>
+</html>
